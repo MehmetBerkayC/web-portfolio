@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Mehmet Web Portfolio</title>
+		<link rel="stylesheet" href="styles.css" type="text/css" />
+		<link rel="stylesheet" href="fanta.css" type="text/css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+			integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+	</head>
+	<body>
+		<header>
+			<a href="/">Mehmet Berkay C. </a>
+			<nav>
+				<a target="_blank" href="https://github.com/MehmetBerkayC"
+					><i class="fa-brands fa-square-github"></i
+				></a>
+				<a
+					target="_blank"
+					href="https://www.linkedin.com/in/mehmet-berkay-coruk-b2b83420a/"
+					><i class="fa-brands fa-linkedin"></i
+				></a>
+			</nav>
+		</header>
+		<!-- MAIN -->
+		<main>
+			<section>
+				<div class="intro-header">
+					<h1>Merhaba! I'm Mehmet...</h1>
+					<p>Software Developer, Computer Engineer</p>
+				</div>
+				<h5 class="intro-description">
+					<p>
+						A computer engineer based in Turkey. I enjoy playing
+						games, watching cartoons, reading fantastic medieval-era
+						books, developing games and web applications!
+					</p>
+				</h5>
+				<div class="links-container">
+					<i class="fa-solid link-arrow fa-arrow-right"></i>
+					<a href="mailto:mehmetberkaycoruk@gmail.com"> Email me! </a>
+					<a target="_blank" href="https://github.com/MehmetBerkayC"
+						>Github
+					</a>
+					<a
+						target="_blank"
+						href="https://www.linkedin.com/in/mehmet-berkay-coruk-b2b83420a/"
+						>LinkedIn
+					</a>
+				</div>
+				<div id="play-game">
+					<button onclick="PlayGame()">Lets Play?</button>
+				</div>
+				<div class="color-div" style="display: none">
+					<h4>Pick a color!</h4>
+					<p style="display: none">Great... You suck at this game!</p>
+					<input
+						type="color"
+						id="color-picker"
+						onchange="ChangeColor()"
+						value="#0084ff"
+					/>
+					<button style="display: none" onclick="ResetColor()">
+						Reset
+					</button>
+				</div>
+			</section>
+			<section>
+				<h2>Skills</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Area</th>
+							<th>Technologies</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Languages</td>
+							<td>C# | JavaScript | Python</td>
+						</tr>
+						<tr>
+							<td>Version Control</td>
+							<td>Git | Github</td>
+						</tr>
+						<tr>
+							<td>Web Development</td>
+							<td>
+								ReactJS | NextJS | MongoDB | Firebase |
+								TailwindCSS
+							</td>
+						</tr>
+						<tr>
+							<td>Game Development</td>
+							<td>Unity</td>
+						</tr>
+						<tr>
+							<td>Organization and Design</td>
+							<td>Trello | Miro | Krita | MS Paint</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<section>
+				<h2>Web Projects</h2>
+				<div class="cards-grid">
+					<div class="project-card">
+						<div>
+							<h4>Brotein</h4>
+							<div class="tech-list">
+								<div class="card-button-secondary">
+									<p>ReactJS</p>
+								</div>
+								<div class="card-button-secondary">
+									<p>FantaCSS</p>
+								</div>
+								<div class="card-button-secondary">
+									<p>JavaScript</p>
+								</div>
+								<p>The Simple 30 Day Workout Plan</p>
+								<div class="project-links">
+									<a
+										target="_blank"
+										href="https://brotein.netlify.app"
+										>Live</a
+									>
+									<a
+										target="_blank"
+										href="https://github.com/MehmetBerkayC/brotein"
+										>Github</a
+									>
+								</div>
+							</div>
+						</div>
+
+						<div class="img-div">
+							<img
+								class="big-img"
+								src="/web-portfolio/public/broteinThumbnail.png"
+								alt="BroteinThumbnailImage"
+							/>
+						</div>
+					</div>
+					<div class="project-card">
+						<div>
+							<h4>Project Title</h4>
+							<div class="tech-list">
+								<div class="card-button-secondary">
+									<p>NextJS</p>
+								</div>
+								<div class="card-button-secondary">
+									<p>Firebase</p>
+								</div>
+								<div class="card-button-secondary">
+									<p>TailwindCSS</p>
+								</div>
+								<p>
+									Information about the last project contents
+									should be put here in this placeholder!
+								</p>
+								<div class="project-links">
+									<a target="_blank" href="/">Live</a>
+									<a target="_blank" href="/">Github</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="img-div">
+							<img
+								class="big-img"
+								src="/web-portfolio/public/The Crew 22024-10-13-23-9-48.jpg"
+								alt="placeholder-thumbnail"
+							/>
+						</div>
+					</div>
+					<div class="project-card">
+						<div>
+							<h4>Project Title</h4>
+							<div class="tech-list">
+								<div class="card-button-secondary">
+									<p>NextJS</p>
+								</div>
+								<div class="card-button-secondary">
+									<p>Firebase</p>
+								</div>
+								<div class="card-button-secondary">
+									<p>TailwindCSS</p>
+								</div>
+								<p>
+									Information about the last project contents
+									should be put here in this placeholder!
+								</p>
+								<div class="project-links">
+									<a target="_blank" href="/">Live</a>
+									<a target="_blank" href="/">Github</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="img-div">
+							<img
+								class="big-img"
+								src="/web-portfolio/public/The Crew 22024-10-13-23-9-48.jpg"
+								alt="placeholder-thumbnail"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!-- FOOTER -->
+		<footer>
+			<p>
+				By
+				<a target="_blank" href="/web-portfolio/">MehmetBerkayCoruk</a>
+				⭐ the repo on
+				<a target="_blank" href="/putRepoLink">Github</a>
+			</p>
+		</footer>
+		<script>
+			// This is the color game interaction
+
+			// 1. Select all the DOM elements required
+			const body = document.querySelector("body");
+			const colorInput = document.getElementById("color-picker");
+			const colorDiv = document.querySelector(".color-div");
+			const hiddenText = document.querySelector(".color-div p");
+			const resetButton = document.querySelector(".color-div button");
+			const playButton = document.getElementById("play-game");
+			const bodyBackgroundColor = body.style.backgroundColor;
+
+			// 2. Functions
+
+			function PlayGame() {
+				// Display color selector input
+				colorDiv.style.display = "block";
+				playButton.style.display = "none";
+			}
+
+			function ChangeColor() {
+				// change the background color depending on the selected color input
+				const selectedColor = colorInput.value;
+				body.style.backgroundColor = selectedColor;
+
+				hiddenText.style.display = "block";
+				resetButton.style.display = "block";
+				colorInput.style.display = "none";
+			}
+
+			function ResetColor() {
+				// Reset the background color to the default
+				body.style.backgroundColor = bodyBackgroundColor;
+				colorInput.style.display = "block";
+				playButton.style.display = "block";
+
+				hiddenText.style.display = "none";
+				resetButton.style.display = "none";
+				colorDiv.style.display = "none";
+			}
+
+			// 3. Assign functions to the buttons
+		</script>
+	</body>
+</html>
